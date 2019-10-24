@@ -215,13 +215,8 @@ properties.
 
 | Property      | Description                                         |
 | ------------- | --------------------------------------------------- |
-| **PSScriptRoot**  | Contains the full path to the script that invoked   |
-|               | the current command. The value of this property is  |
-|               | populated only when the caller is a script.         |
-| **PSCommandPath** | Contains the full path and file name of the script  |
-|               | that invoked the current command. The value of this |
-|               | property is populated only when the caller is a     |
-|               | script.                                             |
+| **PSScriptRoot**  | Contains the full path to the script that invoked the current command. The value of this property is populated only when the caller is a script. |
+| **PSCommandPath** | Contains the full path and file name of the script that invoked the current command. The value of this property is populated only when the caller is a script. |
 
 Unlike the `$PSScriptRoot` and `$PSCommandPath` automatic variables, the
 **PSScriptRoot** and **PSCommandPath** properties of the `$MyInvocation`
@@ -471,22 +466,13 @@ following items:
 
 | Property                  | Description                                   |
 | ------------------------- | --------------------------------------------- |
-| **PSVersion**             | The PowerShell version number                 |
-| **PSEdition**             | This property has the value of 'Desktop', for |
-|                           | Windows Server and Windows client versions.   |
-|                           | This property has the value of 'Core' for     |
-|                           | PowerShell running under Nano Server or       |
-|                           | Windows IOT.                                  |
-| **GitCommitId**           | The commit Id of the source files, in GitHub, |
-| **OS**                    | Description of the operating system that      |
-|                           | PowerShell is running on.                     |
-| **Platform**              | Platform that the operating system is running |
-|                           | on. The value on Linux and macOS is **Unix**. |
-|                           | See `$IsMacOs` and `$IsLinux`.                |
-| **PSCompatibleVersions**  | Versions of PowerShell that are compatible    |
-|                           | with the current version                      |
-| **PSRemotingProtocolVersion** | The version of the PowerShell remote      |
-|                           | management protocol.                          |
+| **PSVersion**             | The PowerShell version number.                |
+| **PSEdition**             | This property has the value of 'Desktop', for Windows Server and Windows client versions. This property has the value of 'Core' for PowerShell running under Nano Server or Windows IOT. |
+| **GitCommitId**           | The commit Id of the source files, in GitHub. |
+| **OS**                    | Description of the operating system that PowerShell is running on. |
+| **Platform**              | Platform that the operating system is running on. The value on Linux and macOS is **Unix**. See `$IsMacOs` and `$IsLinux`. |
+| **PSCompatibleVersions**  | Versions of PowerShell that are compatible with the current version. |
+| **PSRemotingProtocolVersion** | The version of the PowerShell remote management protocol. |
 | **SerializationVersion**  | The version of the serialization method       |
 | **WSManStackVersion**     | The version number of the WS-Management stack |
 
